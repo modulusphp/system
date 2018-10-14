@@ -16,7 +16,8 @@
   "suggest": {
     "modulusphp/utility": "Required if you want to autoload modulusPHP tasks (^1.9.2)",
     "modulusphp/support": "Required if you want to autoload modulusPHP tasks (^1.9.1)",
-    "peppeocchi/php-cron-scheduler": "Required if you want to autoload modulusPHP tasks (^2.3)"
+    "peppeocchi/php-cron-scheduler": "Required if you want to autoload modulusPHP tasks (^2.3)",
+    "nesbot/carbon": "Required if you want to autoload modulusPHP tasks (^1.26.3)"
   },
   "autoload": {
     "psr-4": {
