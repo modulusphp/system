@@ -1,7 +1,7 @@
 {
   "name": "modulusphp/system",
   "description": "System component for modulusPHP",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "license": "MIT",
   "type": "package",
   "authors": [
@@ -12,6 +12,11 @@
   ],
   "require": {
     "vlucas/phpdotenv": "^2.4"
+  },
+  "suggest": {
+    "modulusphp/utility": "Required if you want to autoload modulusPHP tasks (^1.9.2)",
+    "modulusphp/support": "Required if you want to autoload modulusPHP tasks (^1.9.1)",
+    "peppeocchi/php-cron-scheduler": "Required if you want to autoload modulusPHP tasks (^2.3)"
   },
   "autoload": {
     "psr-4": {
