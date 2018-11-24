@@ -17,7 +17,17 @@ class Scheduler extends Runner
    */
   protected function schedule(Schedule $scheduler)
   {
-    // remove logs
+    $this->removeLogs($scheduler);
+  }
+
+  /**
+   * Remove application logs
+   *
+   * @param Schedule $scheduler
+   * @return void
+   */
+  private function removeLogs(Schedule $scheduler)
+  {
     $scheduler->call(function () {
       $searchDir = Config::$root . 'storage' . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR;
 
