@@ -1,15 +1,13 @@
 {
   "name": "modulusphp/system",
   "description": "System component for modulusPHP",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "license": "MIT",
   "type": "package",
-  "authors": [
-    {
-      "name": "Donald Pakkies",
-      "email": "donaldpakkies@gmail.com"
-    }
-  ],
+  "authors": [{
+    "name": "Donald Pakkies",
+    "email": "donaldpakkies@gmail.com"
+  }],
   "require": {
     "vlucas/phpdotenv": "^2.4"
   },
