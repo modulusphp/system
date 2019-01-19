@@ -3,8 +3,7 @@
 namespace Modulus\System;
 
 use Modulus\System\Config;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Capsule\Manager as Capsule;
+use Modulus\Hibernate\Capsule;
 
 class DB
 {
