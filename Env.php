@@ -15,7 +15,7 @@ class Env
   public static function start() : void
   {
     $required = Config::$environment;
-    $dotenv   = new Dotenv(Config::$root);
+    $dotenv   = Dotenv::create(Config::$root);
 
     $dotenv->overload();
     $dotenv->required($required);
