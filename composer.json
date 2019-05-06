@@ -9,7 +9,7 @@
     "email": "donaldpakkies@gmail.com"
   }],
   "require": {
-    "vlucas/phpdotenv": "^2.4"
+    "vlucas/phpdotenv": "^3.0"
   },
   "suggest": {
     "modulusphp/utility": "Required if you want to autoload Modulus tasks (^1.9.2)",
