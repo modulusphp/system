@@ -10,20 +10,17 @@ class DB
   /**
    * Start Database
    *
+   * @param null|string $connection
    * @return bool
    */
-  public static function start() : bool
+  public static function start(?string $connection = null) : bool
   {
-    $capsule = new Capsule();
+    $capsule = new Capsule(null, $connection == null ? config('database.default') : $connection);
 
     $capsule->addConnection(Config::$database);
     $capsule->setAsGlobal();
     $capsule->bootEloquent();
 
-    if ($capsule->connection()->getDatabaseName()) {
-      return true;
-    }
-
-    return false;
+    return $capsule->connection()->getDatabaseName() ? true : false;
   }
 }
