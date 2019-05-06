@@ -1,6 +1,6 @@
 {
   "name": "modulusphp/system",
-  "description": "System component for modulusPHP",
+  "description": "System component for Modulus",
   "version": "1.9.2.2",
   "license": "MIT",
   "type": "package",
