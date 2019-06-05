@@ -19,7 +19,7 @@ class Scheduler extends Runner
   protected function schedule(Schedule $scheduler)
   {
     $this->removeLogs($scheduler);
-    Hibernate::schedule($scheduler);
+    Hibernate::handle($scheduler);
   }
 
   /**
