@@ -1,7 +1,7 @@
 {
   "name": "modulusphp/system",
   "description": "System component for Modulus",
-  "version": "1.9.2.4",
+  "version": "1.9.2.5",
   "license": "MIT",
   "type": "package",
   "authors": [{
@@ -9,6 +9,7 @@
     "email": "donaldpakkies@gmail.com"
   }],
   "require": {
+    "modulusphp/hibernate": "1.9.*",
     "vlucas/phpdotenv": "^3.0"
   },
   "suggest": {
