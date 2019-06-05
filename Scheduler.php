@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use GO\Scheduler as Schedule;
 use Modulus\Support\Filesystem;
 use Modulus\Utility\Scheduler as Runner;
+use Modulus\Hibernate\Schedule as Hibernate;
 
 class Scheduler extends Runner
 {
@@ -18,6 +19,7 @@ class Scheduler extends Runner
   protected function schedule(Schedule $scheduler)
   {
     $this->removeLogs($scheduler);
+    Hibernate::schedule($scheduler);
   }
 
   /**
